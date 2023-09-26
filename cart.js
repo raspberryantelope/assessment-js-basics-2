@@ -85,16 +85,22 @@ console.log(calcFinalPrice(20, 10, .06))
    For the cart and checkout page specifically, I feel like at least the following properties would be necessary:
     - order summary
         This gives the customer a rundown of what they're about to pay for, to verify they have the correct items.
+        This will be an array of objects, so that each object can be a cart item
     - name
         Obviously the customer's name is important.
+        this will be a string because it's a name
     - phone number
         Necessary for sending delivery updates, receipts, and reminders to the correct place
+        this will be a string so that it will display no matter what the customer enters
     - address
         Definitely need to make sure the food gets to the right place, also collects zip code for acquiring tax rate (if needed)
+        this will be a string because it's an address and can contain characters and numbers
     - email
         for sending receipts, updates, and reminders
+        this will be a string because it's an email address and can contain characters and numbers
     - order total
         for knowing how much they're about to pay
+        this will be a number since it's the total cost of the order
 
 
 
