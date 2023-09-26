@@ -33,10 +33,12 @@ const cart = [
     }
 ]
 
-//CODE HERE
+function calculateTotal(arr) {
+    return arr.reduce((total, food) => total + food.price, 0)
+}
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
-
+const summedPrice = calculateTotal(cart)
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -53,8 +55,10 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
-
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    return cartTotal * (1 + tax) - couponValue
+}
+console.log(calcFinalPrice(20, 10, .06))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -78,7 +82,21 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+   For the cart and checkout page specifically, I feel like at least the following properties would be necessary:
+    - order summary
+        This gives the customer a rundown of what they're about to pay for, to verify they have the correct items.
+    - name
+        Obviously the customer's name is important.
+    - phone number
+        Necessary for sending delivery updates, receipts, and reminders to the correct place
+    - address
+        Definitely need to make sure the food gets to the right place, also collects zip code for acquiring tax rate (if needed)
+    - email
+        for sending receipts, updates, and reminders
+    - order total
+        for knowing how much they're about to pay
+
+
 
 */
 
@@ -87,4 +105,30 @@ const cart = [
     guidelines.
 */
 
-//CODE HERE
+let customer = {
+    order: [
+        {
+            name: 'Cheese Pizza',
+            price: 8.99,
+            category: 'entree',
+            popularity: 5,
+            rating: 4.5,
+            tags: [ 'entree', 'classic' ]
+        },
+        {
+            name: "S'mores Pizza",
+            price: 5.99,
+            category: 'side',
+            popularity: 4,
+            rating: 4,
+            tags: [ 'side', 'dessert' ]
+        },
+
+    ],
+    name: "Kyle Johnson",
+    phone: "801-867-5309",
+    address: "560 S 100 W Provo UT 84606",
+    email: "testemail@example.com",
+    ordertotal: calcFinalPrice(14.98, 2, .0725)
+}
+console.log(customer)
