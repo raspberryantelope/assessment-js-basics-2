@@ -71,6 +71,8 @@ console.log(canWeDeliver(85205))
     Name your new function `canWeDeliverTwo`.
 */
 
+
+//bonus ternary
 function canWeDeliverTwo(zipCode) {
     return deliveryAreaZipCodes.includes(zipCode) ? `You're in our delivery zone!` : `Sorry, we can't deliver to that address.`
 }
@@ -112,7 +114,7 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-deals[0].title = deals[0].title.replace('15', '10')
+deals[0].title = deals[0].title.replace("15", "10")
 console.log(deals)
 
 
@@ -130,5 +132,5 @@ console.log(deals)
     to be displaying wrong on the live site.
 */
 
-deals[1].desc = deals[1].desc.replace('March', 'April').trim()
+deals[1].desc = deals[1].desc.replace("March", "April").trim()
 console.log(deals)
