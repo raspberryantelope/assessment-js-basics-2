@@ -55,7 +55,7 @@ class Ticket {
     customer: 575
 */
 
-let firstTicket = new Ticket(['pizza', 'bread', 'soda'], '7:03 PM', 575)
+let firstTicket = new Ticket(["pizza", "cheesy bread", "2L"], "7:03 PM", 575)
 
 
 /*

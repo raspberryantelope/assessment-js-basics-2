@@ -20,15 +20,15 @@
 
 const cart = [
     {
-        name: 'pizza', 
+        name: "pizza",
         price: 9.99
     }, 
     {
-        name: 'pasta', 
+        name: "pasta",
         price: 8.99
     }, 
     {
-        name: 'salad', 
+        name: "salad",
         price: 7.99
     }
 ]
@@ -105,23 +105,23 @@ console.log(calcFinalPrice(20, 10, .06))
     guidelines.
 */
 
-let customer = {
+let customerOne = {
     order: [
         {
-            name: 'Cheese Pizza',
+            name: "Cheese Pizza",
             price: 8.99,
-            category: 'entree',
+            category: "entree",
             popularity: 5,
             rating: 4.5,
-            tags: [ 'entree', 'classic' ]
+            tags: [ "entree", "classic" ]
         },
         {
             name: "S'mores Pizza",
             price: 5.99,
-            category: 'side',
+            category: "side",
             popularity: 4,
             rating: 4,
-            tags: [ 'side', 'dessert' ]
+            tags: [ "side", "dessert" ]
         },
 
     ],
@@ -131,4 +131,4 @@ let customer = {
     email: "testemail@example.com",
     ordertotal: calcFinalPrice(14.98, 2, .0725)
 }
-console.log(customer)
+console.log(customerOne)
