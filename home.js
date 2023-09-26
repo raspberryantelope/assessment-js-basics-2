@@ -24,7 +24,7 @@
 let greetUser = (username) => {
     return `Welcome back, ${username}`
 }
-console.log(greetUser('Andrew'))
+console.log(greetUser("Andrew"))
 
 
 //////////////////PROBLEM 2////////////////////
@@ -96,11 +96,11 @@ console.log(canWeDeliverTwo(85205))
 
 const deals = [
     {
-        title: '15% Off!', 
+        title: '15% Off!',
         desc: 'Applied to your entire order when you spend $30 or more'
     }, 
     {
-        title: 'Free Kids Meal with 2 Regular Entrees', 
+        title: 'Free Kids Meal with 2 Regular Entrees',
         desc: '   This deal lasts until the end of March! '
     }
 ]

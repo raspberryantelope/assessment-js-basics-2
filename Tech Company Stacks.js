@@ -1,4 +1,5 @@
-//The only guidelines for this document were the ones on the rubric, and I wasn't sure it's looking for specific languages (i.e. Java, Python, a MERN stack, etc.) or descriptions of the technologies. Adobe and Microsoft only give more vague info anyway.
+//The only guidelines for this document were the ones on the rubric, and I wasn't sure it's looking for specific languages (i.e. Java, Python, a MERN stack, etc.) or descriptions of the technologies.
+// Adobe and Microsoft only give more vague info anyway, so I explained those two as they describe them, and then went into specific techs with Spotify.
 
 
 /* Adobe:
